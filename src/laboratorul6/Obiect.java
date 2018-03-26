@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ipobiect;
+
+import laboratorul6.*;
 
 /**
  *
  * @author stefa
  */
-public abstract class Obiect {
+public  class Obiect implements IListable{
     String nume;
     int pretMinim;
     int vechime;
@@ -20,6 +21,7 @@ public abstract class Obiect {
         this.vechime = vechime;
     }
     
+    @Override
     public void list(){
         System.out.println("nume:" + nume);
         System.out.println("pretMinim " + pretMinim);

@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package iporar;
+package laboratorul6;
 
 /**
  *
  * @author Catalin
  */
-public interface ICanBid {
-    public void bid();
+public interface IListable {
+    public void list();
 }

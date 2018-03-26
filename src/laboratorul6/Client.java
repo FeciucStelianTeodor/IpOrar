@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package iporar;
+package laboratorul6;
+
+import laboratorul6.Person;
 
 /**
  *
  * @author Catalin
  */
 //client is the person who bids
-public class Client extends Person {
+public class Client extends Person{
     private int money;
     
     public Client(String firstName, String lastName, String cnp, String birth, String email, int money) {
@@ -31,6 +33,12 @@ public class Client extends Person {
     public void setMoney(int money) {
         this.money = money;
     }
+
+    @Override
+    public void bid(int sum) {
+        
+    }
+    
     
     
 }
