@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author stefa
  */
-public class Proprietar extends Person {
+public class Proprietar extends Person{
     String Certificat;
     ArrayList<Obiect> Obiecte = new ArrayList<>();
     
