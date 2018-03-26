@@ -3,22 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package laboratorul6;
+package ip;
 
 /**
  *
  * @author Marian
  */
 public class Sculptura extends Obiect{
-    private String Autor;
-
-    public String getAutor() {
-        return Autor;
-    }
-
-    public void setAutor(String Autor) {
-        this.Autor = Autor;
+    private String autor;
+    
+    public Sculptura(String Nume,String Autor, int PretMinim, int Vechime){
+        this.nume = Nume;
+        this.autor = Autor;
+        this.pretMinim = PretMinim;
+        this.vechime = Vechime;
     }
     
+    public void setAutor(String aut){
+        this.autor = aut;
+    }
+    
+    public String getAutor(){
+        return this.autor;
+    }
     
 }
