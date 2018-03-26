@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Laboratorul6;
+package laboratorul6;
 
 /**
  *
@@ -11,28 +11,14 @@ package Laboratorul6;
  */
 public class Sculptura extends Obiect{
     private String Autor;
-    
-    public void setVechime(int varsta){
-        this.Vechime = varsta;
+
+    public String getAutor() {
+        return Autor;
     }
-    @override
-    public void setNume(String num){
-        this.Nume = num;
-    }
-    
-    public void setAutor(String aut){
-        this.Autor = aut;
-    }
-    @override
-    public String getNume(){
-        return this.Nume;
+
+    public void setAutor(String Autor) {
+        this.Autor = Autor;
     }
     
-    public String getAutor(){
-        return this.Autor;
-    }
-    @override
-    public Number getVechime(){
-        return this.Vechime;
-    }
+    
 }

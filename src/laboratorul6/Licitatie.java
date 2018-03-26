@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package laboratorul6;
 
+import ipobiect.Obiect;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -34,6 +35,16 @@ public class Licitatie {
     }
 
     public Obiect getCurrentBiddingObiect() {
-        return this.obiecte.indexOf(currentObiect);
+        return this.obiecte.get(currentObiect);
+    }
+
+    public void bid(int pret) {
+        if (pret > this.obiecte.get(currentObiect).getPretMinim()) {
+            this.obiecte.get(currentObiect).setPretMinim(pret);
+        }
+    }
+
+    public int getCurrentBiddingPrice() {
+        return this.obiecte.get(currentObiect).getPretMinim();
     }
 }

@@ -26,4 +26,30 @@ public abstract class Obiect {
         System.out.println("vechime " + vechime);
     }
 
+    public String getNume() {
+        return nume;
+    }
+
+    public void setNume(String nume) {
+        this.nume = nume;
+    }
+
+    public int getPretMinim() {
+        return pretMinim;
+    }
+
+    public void setPretMinim(int pretMinim) {
+        this.pretMinim = pretMinim;
+    }
+
+    public int getVechime() {
+        return vechime;
+    }
+
+    public void setVechime(int vechime) {
+        this.vechime = vechime;
+    }
+    
+    
+
 }
