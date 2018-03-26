@@ -5,6 +5,9 @@
  */
 package Model;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  *
  * @author michael
@@ -12,9 +15,11 @@ package Model;
 public class Licitatie {
 
     private static Licitatie licitatie = null;
+    private List<Obiect> obiecte;
+    private int currentObiect;
 
     private Licitatie() {
-
+        this.obiecte = new LinkedList<>();
     }
 
     public synchronized Licitatie getInstance() {
@@ -22,5 +27,13 @@ public class Licitatie {
             licitatie = new Licitatie();
         }
         return licitatie;
+    }
+
+    public void addObiect(Obiect obiect) {
+        obiecte.add(obiect);
+    }
+
+    public Obiect getCurrentBiddingObiect() {
+        return this.obiecte.indexOf(currentObiect);
     }
 }
